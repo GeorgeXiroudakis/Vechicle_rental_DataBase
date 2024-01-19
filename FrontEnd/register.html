@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+
+    <title>Customer Registration</title>
+</head>
+<body>
+<form id="registrationForm">
+    <h2>Customer Information</h2>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName"><br><br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName"><br><br>
+    <label for="street">Street:</label>
+    <input type="text" id="street" name="street"><br><br>
+    <label for="addressNum">AddressNum:</label>
+    <input type="text" id="addressNum" name="addressNum"><br><br>
+
+    <label for="PostalCode">PostalCode:</label>
+    <input type="text" id="PostalCode" name="PostalCode"><br><br>
+    <input type="date" id="birthdate" name="birthdate"><br>
+    <div id="ageError" style="color: red; display: none;">You must be at least 16 years old to register.</div><br>
+    <label for="licenseNumber">Driving License Number:</label>
+    <input type="text" id="licenseNumber" name="licenseNumber"><br><br>
+    <label for="creditCardDetails">Credit Card Details:</label>
+    <input type="text" id="creditCardDetails" name="creditCardDetails"><br><br>
+    <input type="submit" value="Register" id="submit_but" onclick="RegisterPOST();">
+</form>
+
+
+</body>
+</html>

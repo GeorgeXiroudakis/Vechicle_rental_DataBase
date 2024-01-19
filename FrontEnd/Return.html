@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Return Form</title>
+    <link rel="stylesheet" href="Return.css">
+</head>
+<body>
+<form id="ReturnForm">
+<div class="container mt-4">
+    <h2>Vehicle Return Form</h2>
+            <div class="form-group">
+                <label for="rentNumber">Enter Rent Number:</label>
+                <input type="text" class="form-control" id="rentNumber" name="rentNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Returnreason">Select ReturnType:</label>
+                <select class="form-control" id="Returnreason" name="Returnreason">
+                    <option value="Normal">Normal</option>
+                    <option value="CarFail">CarFail</option>
+                    <option value="Accident">Accident</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="returnDate">Current Date:</label>
+                <input type="date" class="form-control" id="returnDate" name="returnDate">
+            </div>
+
+            <div class="form-group">
+                <label for="returnTime">Current Time:</label>
+                <input type="time" class="form-control" id="returnTime" name="returnTime">
+            </div>
+
+    <input type="submit" value="Register" id="submit_but" onclick="RentPOST();">
+</div>
+
+
+</form>
+
+
+<script src="Return.js"></script>
+</body>
+</html>

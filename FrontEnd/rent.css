@@ -1,0 +1,311 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Form Styles */
+#rentalForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-section input[type="date"],
+.form-section select,
+.form-section input[type="number"],
+.form-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Bicycle Details Styles */
+#bicycleDetails {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+#bicycleDetails fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#bicycleDetails legend {
+    font-weight: bold;
+}
+
+#bicycleDetails label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#bicycleDetails button {
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#bicycleDetails button:hover {
+    background-color: #007B9E;
+}
+
+/* Scooter Details Styles */
+#scooterDisplay {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+#scooterDisplay fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#scooterDisplay legend {
+    font-weight: bold;
+}
+
+#scooterDisplay label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#scooterDisplay button {
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#scooterDisplay button:hover {
+    background-color: #007B9E;
+}
+
+/* Car Details Styles */
+
+#carDisplay {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+#carDisplay fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#carDisplay legend {
+    font-weight: bold;
+}
+
+#carDisplay label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#carDisplay button {
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#carDisplay button:hover {
+    background-color: #007B9E;
+}
+
+
+
+/* Motorcycle Details Styles */
+
+#motorcycleDisplay {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+#motorcycleDisplay fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#motorcycleDisplay legend {
+    font-weight: bold;
+}
+
+#motorcycleDisplay label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#motorcycleDisplay button {
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#motorcycleDisplay button:hover {
+    background-color: #007B9E;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    #rentalForm {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .form-section input[type="date"],
+    .form-section select,
+    .form-section input[type="number"],
+    .form-section input[type="text"] {
+        width: 100%;
+    }
+}
+
+/* General Fieldset Styling */
+fieldset {
+    border: 2px solid #007BFF; /* Blue border */
+    background-color: #f9f9f9;  /* Light grey background */
+    padding: 15px;             /* Inner spacing */
+    margin-bottom: 20px;       /* Spacing between each fieldset */
+    border-radius: 5px;        /* Rounded corners */
+}
+
+/* Styling for the Legend (title) of each Fieldset */
+legend {
+    font-size: 1.2em;          /* Larger font size */
+    font-weight: bold;         /* Bold font */
+    color: #007BFF;            /* Matching the border color */
+    padding: 5px 10px;         /* Padding around the text */
+    background-color: #ffffff; /* White background for the legend */
+    border-radius: 3px;        /* Slightly rounded corners for the legend */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    fieldset {
+        padding: 10px;         /* Reduced padding on smaller screens */
+    }
+    legend {
+        font-size: 1em;        /* Slightly smaller font size for legends */
+    }
+}
+
+/* CSS to style the selected button */
+.select-button {
+    transition: background-color 0.3s ease;
+    /* other styles */
+}
+
+.select-button[data-selected="true"] {
+    background-color: orange;
+    color: white;
+}
+
+body
+{
+    font-family: "Chose", serif;
+}
+#wrapper
+{
+    border: 1px solid #888;
+    display: inline-block;
+    padding:20px;
+
+}
+
+
+
+body {
+    background-image: url('thunder.jpg');
+    background-size: auto auto; /* Width and height */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    padding: 10px 20px;
+    background-color: orange;
+    border: thin solid darkorange;
+    border-radius: 10px;
+    margin:5px;
+    display: inline-block;
+}
+
+input[type="radio"]:checked + label {
+    background-color: darkblue;
+    cursor: default;
+    color: #E6E6E6;
+}
+
+#rentalForm {
+    opacity: 0.8;
+
+    /* Additional styling to enhance appearance */
+    background-color: #ffffff; /* Assuming a white background; adjust as needed */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+

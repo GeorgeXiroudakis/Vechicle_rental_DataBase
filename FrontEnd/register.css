@@ -1,0 +1,89 @@
+/* register.css */
+
+/* register.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed to flex-start */
+    height: 100vh;
+
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 50px; /* Added margin-top to lower the form */
+}
+
+/* Rest of your CSS remains the same */
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button#submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button#submit:hover {
+    background-color: #45a049;
+}
+
+#ageError {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        padding: 10px;
+    }
+}
+body {
+    background-image: url('ponos.jpg');
+    background-size: auto auto; /* Width and height */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#registrationForm {
+    opacity: 0.8;
+
+    /* Additional styling to enhance appearance */
+    background-color: #3e43e3; /* Assuming a white background; adjust as needed */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Vehicle</title>
+    <link rel="stylesheet" href="rent.css">
+</head>
+<body>
+<form id="rentalForm">
+
+    <!-- Age Verification Block -->
+    <fieldset>
+        <div class="form-section">
+            <h2>Verification</h2>
+            <label for="birthdate">Enter your birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            <div id="ageError" class="error-message" style="display: none;">You must be at least 16 years old to rent a vehicle.</div>
+        </div>
+    </fieldset>
+    <!-- Vehicle Selection Block -->
+    <fieldset>
+        <!-- Vehicle Type Selection -->
+        <div class="form-section">
+            <label for="vehicleSelection">Select Vehicle Type:</label>
+            <select id="vehicleSelection" name="vehicle">
+                <option value="bicycle">Bicycle</option>
+                <option value="scooter">Scooter</option>
+                <option value="car">Car</option>
+                <option value="motorcycle">Motorcycle</option>
+            </select>
+        </div>
+
+
+        <!-- Bicycle Details Container -->
+        <div id="bicycleDetails" style="display: none;">
+            <input type="radio" id="selectBicycle" name="bicycleOption" class="select-radio">
+            <label for="selectBicycle">Select Bicycle</label>
+        </div>
+
+        <!-- Scooter Display Section -->
+        <div id="scooterDisplay" style="display: none;">
+            <input type="radio" id="selectScooter" name="scooterOption" class="select-radio">
+            <label for="selectScooter">Select Scooter</label>
+        </div>
+
+        <!-- Car Display Section -->
+        <div id="carDisplay" style="display: none;">
+            <input type="radio" id="selectCar" name="carOption" class="select-radio">
+            <label for="selectCar">Select Car</label>
+        </div>
+
+        <!-- Motorcycle Display Section -->
+        <div id="motorcycleDisplay" style="display: none;">
+            <input type="radio" id="selectMotorcycle" name="motorcycleOption" class="select-radio">
+            <label for="selectMotorcycle">Select Motorcycle</label>
+        </div>
+
+    </fieldset>
+    <!-- Submit Button -->
+    <fieldset>
+        <label for="creditCardDetails">Credit Card Details:</label>
+        <input type="text" id="creditCardDetails" name="creditCardDetails" required><br><br>
+        <label for="licenseNumber">Driving License Number:</label>
+        <input type="text" id="licenseNumber" name="licenseNumber"><br><br>
+        <label for="DriverName"> DriverName:</label>
+        <input type="text" id="DriverName" name="DriverName"><br><br>
+        <label for="DriverSurname"> DriverSurname:</label>
+        <input type="text" id="DriverSurname" name="DriverSurname"><br><br>
+
+        <label for="StartDate">StartDate:</label>
+        <input type="date" id="StartDate" name="StartDate"><br>
+
+        <label for="ReturnDate">ReturnDate:</label>
+        <input type="date" id="ReturnDate" name="ReturnDate"><br>
+
+        <label for="Start Hour">Start Hour:</label>
+        <input type="time" id="Start Hour" name="Start Hour"><br>
+
+        <label for="FinishHour">Finish Hour:</label>
+        <input type="time" id="FinishHour" name="FinishHour"><br>
+
+
+
+    </fieldset>
+    <label for="toggle-on">Insurance</label>
+    <input id="toggle-on" name="toggle" type="radio">
+    <label for="toggle-on">On</label>
+    <input id="toggle-off" name="toggle" type="radio">
+    <label for="toggle-off">Off</label>
+
+    <input type="submit" value="Register" id="submit_but" onclick="RentPOST();">
+
+</form>
+
+<script src="rent.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+<div class="button-container">
+    <button id="return-btn" onclick="redirectTo('Return.html')">Return</button>
+    <button id="register-btn" onclick="redirectTo('register.html')">Register</button>
+    <button id="rent-btn" onclick="redirectTo('rent.html')">Rent</button>
+</div>
+
+<script>
+    function redirectTo(page) {
+        window.location.replace(page)
+    }
+</script>
+
+</body>
+</html>
